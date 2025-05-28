@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML And CSS</title>
+
+<body>
+  <h3>Lesson 11</h3>
+  <style>
+  .text {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50px 200px 75px;
+  }
+  .colom1 {
+    border: none;
+    background-color: skyblue;
+  }
+  .colom2 {
+    border: none;
+    background-color: pink;
+  }
+  .colom3 {
+    border: none;
+    background-color: skyblue;
+  }
+</style>
+  <style>
+  .text1 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 20px;
+    gap: 10px;
+    justify-content: center;
+  }
+  p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 20px;
+}
+
+.profile {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.mutual-friends-row {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.mutual-friend-picture {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  border-radius: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.mutual-friends {
+  color: rgb(100, 100, 100);
+}
+
+.add-friend-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+</style>
+
+</head>
+</body>
+<div>
+  <div class="text">
+  <div class="colom1">200px</div>
+  <div class="colom2">75px</div>
+</div>
+<br>
+<div>
+  <div class="text">
+    <div class="colom3">col1</div>
+  <div class="colom2">col2</div>
+  <div class="colom1">col3</div>
+</div>
+<br>
+<body>
+<div class="text1">
+  <div style="background-color: pink;">col1</div>
+  <div style="background-color: pink;">col2</div>
+  <div style="background-color: pink;">col3</div>
+  <div style="background-color: pink;">col4</div>
+  <div style="background-color: pink;">col1</div>
+  <div style="background-color: pink;">col2</div>
+  <div style="background-color: pink;">col3</div>
+  <div style="background-color: pink;">col4</div>
+</div>
+</body>
+<br>
+<html>
+  <head>
+    <link rel="stylesheet" href="11d.css">
+  </head>
+  <body>
+    <div class="grid">
+      <div class="profile">
+        <img class="profile-picture" src="kucing.png">
+        <p class="name">
+          Oliver
+        </p>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-picture" src="kucing.png">
+          <p class="mutual-friends">
+            2 mutual friends
+          </p>
+        </div>
+        <button class="add-friend-button">
+          Add Friend
+        </button>
+      </div>
+
+      <div class="profile">
+        <img class="profile-picture" src="kucing2.png">
+        <p class="name">
+          Mimi
+        </p>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-picture" src="anjing.png">
+          <p class="mutual-friends">
+            3 mutual friends
+          </p>
+        </div>
+        <button class="add-friend-button">
+          Add Friend
+        </button>
+      </div>
+
+      <div class="profile">
+        <img class="profile-picture" src="anjing.png">
+        <p class="name">
+          Rex
+        </p>
+        <div class="mutual-friends-row">
+          <img class="mutual-friend-picture" src="kucing2.png">
+          <p class="mutual-friends">
+            4 mutual friends
+          </p>
+        </div>
+        <button class="add-friend-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+</html>

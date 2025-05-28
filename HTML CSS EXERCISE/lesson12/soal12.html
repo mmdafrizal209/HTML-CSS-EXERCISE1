@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 200px 75px;
+      padding: 10px;
+    }
+
+     .kolom1 {
+      background-color: rgb(21, 167, 234);
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .kolom2 {
+      background-color: pink;
+      color: black;
+      display: flex;
+      justify-content: center;
+    }
+
+    .grid-c2{
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        padding: 10px;
+    }
+
+    .item1 {
+        background-color: #109df4;
+        color: black;
+        display: flex;
+    }
+
+    .item2 {
+        background-color: pink;
+        color: black;
+        display: flex;
+    }
+
+     .item3 {
+        background-color: #109df4;
+        color: black;
+        display: flex;
+    }
+
+    .grid-c3{
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px; 
+        padding: 10px;
+        justify-content: space-between;
+    }
+     .Item1 {
+        background-color: pink;
+        color: black;
+        display: flex;
+    }
+
+    .Item2 {
+        background-color: pink;
+        color: black;
+        display: flex;
+    }
+
+    .grid-c4{
+        display: grid;
+        grid-template-columns: 50px 50px;
+        border: 1px solid black;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .ITEM {
+        background-color: pink;
+        color: black;
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: rgb(5, 96, 231);
+        padding: 3px;
+        border-radius: 30px;
+        width: 40px;
+        height: 30px;
+        justify-content: center;
+        color: white;
+    }
+
+    .notif {
+        display: flex;
+        align-items: center;
+        background-color: rgb(5, 96, 231);
+        padding: 3px;
+        border-radius: 30px;
+        width: 25px;
+        height: 30px;
+        justify-content: center;
+        color: white;
+    }
+
+   .search {
+    display: flex;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    align-items: center;
+    justify-content: space-between; /* Membagi ruang secara merata */
+  }
+
+  .search h3 {
+    margin: 0 15px;
+    white-space: nowrap;
+  }
+
+  .google {
+    width: 60%; 
+    max-width: 500px; 
+    border-radius: 30px;
+    padding: 8px 15px;
+    border: none;
+    background-color: whitesmoke;
+    margin: 0 20px; 
+  }
+
+  .search .download {
+    border: 1px solid white;
+    padding: 5px 10px; 
+    margin-left: 15px;
+  }
+
+    .profile-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px 5px; /* Padding samping diperkecil */
+            border-bottom: 1px solid #eee;
+            gap: 5px; /* Jarak antar elemen diperketat */
+        }
+        
+        .profile-info {
+            flex-grow: 1;
+            margin-right: 5px; /* Jarak ke tombol diperkecil */
+        }
+        
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            white-space: nowrap;
+        }
+        
+        .profile-type {
+            font-size: 14px;
+            color: #666;
+            margin: 2px 0;
+        }
+        
+        .profile-status {
+            font-size: 12px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .follow-btn {
+            background-color: rgb(17, 132, 226);
+            color: white;
+            padding: 4px 10px; /* Ukuran tombol diperkecil */
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 0; /* Margin kiri dihilangkan */
+            white-space: nowrap;
+        }
+        
+        .profile-pic {
+            width: 45px; /* Ukuran gambar diperkecil */
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px; /* Jarak gambar ke teks diperkecil */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="kolom1">200px</div>
+        <div class="kolom2">75px</div>
+    </div>
+
+    <div class="grid-c2">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div>
+
+    <div class="grid-c3">
+        <div class="Item1">item1</div>
+        <div class="Item2">item2</div>
+        <div class="Item1">item3</div>
+        <div class="Item1">item4</div>
+    </div>
+
+    <div class="grid-c4">
+        <div class="ITEM">item1</div>
+        <div class="ITEM">item2</div>
+    </div>
+   
+    <div style="display: flex; align-items: center; gap: 150px;">
+    <h3 style="padding: 10px; margin: 2px;">
+        Home
+    </h3>
+    <span class="navbar">14</span>
+    </div>
+    <br>
+    <div style="display: flex; align-items: center; gap: 110px;">
+        <h3 style="padding: 10px; margin: 2px;">
+            Notifications
+        </h3>
+       <div class="notif">3</div>
+    </div>
+    <br>
+    <div style="display: flex; align-items: center; gap: 140px;">
+        <h3 style="padding: 10px; margin: 2px;">
+            Messages
+        </h3>
+        <div class="notif">5</div>
+    </div>
+    <br>
+    <div class="search">
+       <h3>Home</h3>
+        <input type="text" placeholder="Search Google or type a URL" class="google">
+        <h3 class="download">Download</h3>
+    </div>
+    
+    <div class="profile-row">
+        <img src="1.jpg" alt="Oliver" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">Oliver</div>
+            <div class="profile-type">the cat</div>
+            <div class="profile-status">Popular</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    
+    <!-- Mimi Sleepy Cat -->
+    <div class="profile-row">
+        <img src="1.jpg" alt="Mimi" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">Mimi</div>
+            <div class="profile-type">Sleepy Cat</div>
+            <div class="profile-status">Popular</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    
+    <!-- Rex Happy Bulldog -->
+    <div class="profile-row">
+        <img src="1.jpg" alt="Rex" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">Rex</div>
+            <div class="profile-type">Happy Bulldog</div>
+            <div class="profile-status">Popular</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+</body>
+</html>
